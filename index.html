@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saidov Diyorbek | Backend Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Til almashtirish paneli -->
+    <nav class="top-nav">
+      <div class="lang-switch">
+        <button class="lang-btn active" onclick="setLanguage('uz')">UZ</button>
+        <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+        <button class="lang-btn" onclick="setLanguage('ru')">RU</button>
+      </div>
+    </nav>
+
+    <!-- Header / Asosiy qism -->
+    <header class="hero">
+      <h1 class="name">Saidov Diyorbek</h1>
+      <p class="role" data-i18n="hero_role">Backend Software Developer</p>
+      <p class="summary" data-i18n="hero_summary">
+        Java va Kotlin ekotizimida yuqori yuklamali, xavfsiz hamda masshtablanuvchi backend tizimlarni loyihalashga ixtisoslashgan dasturchi.
+      </p>
+
+      <div class="contact-grid">
+        <a href="https://t.me/saidov_diyorbek" target="_blank" class="contact-pill">
+          <i class="fa-brands fa-telegram"></i> @saidov_diyorbek
+        </a>
+        <a href="tel:+998990026385" class="contact-pill">
+          <i class="fa-solid fa-phone"></i> +998 99 002 63 85
+        </a>
+        <a href="mailto:saidovdiyer777@gmail.com" class="contact-pill">
+          <i class="fa-solid fa-envelope"></i> saidovdiyer777@gmail.com
+        </a>
+        <a href="https://github.com/saidovdiyorbek" target="_blank" class="contact-pill">
+          <i class="fa-brands fa-github"></i> github.com/saidovdiyorbek
+        </a>
+      </div>
+    </header>
+
+    <!-- Ko'nikmalar / Skills -->
+    <section class="section">
+      <h2 class="section-title" data-i18n="skills_title">Texnologik Stek & Ko'nikmalar</h2>
+      <div class="skills-wrapper">
+        <span class="skill-tag highlight">Java</span>
+        <span class="skill-tag highlight">Kotlin</span>
+        <span class="skill-tag highlight">Spring Boot</span>
+        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">Spring Security</span>
+        <span class="skill-tag">Hibernate / JPA</span>
+        <span class="skill-tag">REST API</span>
+        <span class="skill-tag">Telegram API</span>
+        <span class="skill-tag">Swagger / OpenAPI</span>
+        <span class="skill-tag">Postman</span>
+        <span class="skill-tag">APIDog</span>
+        <span class="skill-tag">Maven</span>
+        <span class="skill-tag">Gradle</span>
+      </div>
+    </section>
+
+    <!-- Loyihalar / Projects -->
+    <section class="section">
+      <h2 class="section-title" data-i18n="projects_title">Bajarilgan Loyihalar</h2>
+      
+      <div class="projects-list">
+        <!-- Project 1: HR Management -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3>HR Management Microservices Platform</h3>
+            <a href="https://github.com/saidovdiyorbek/HR-management" target="_blank" class="code-btn">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+          <div class="tags">
+            <span class="badge">Spring Boot</span>
+            <span class="badge">Microservices</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">REST API</span>
+          </div>
+          <p class="description" data-i18n="hr_desc">
+            Tashkilotlar uchun xodimlarni boshqarish, vazifalar taqsimlash (task assignment) va avtomatlashtirilgan bildirishnomalar yuborish servisi. Tizim mikroxizmatlar arxitekturasi asosida loyihalashtirilgan.
+          </p>
+        </article>
+
+        <!-- Project 2: Warehouse -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Warehouse Multi-Tenant Management System</h3>
+            <a href="https://github.com/saidovdiyorbek/warehouse_zero" target="_blank" class="code-btn">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+          <div class="tags">
+            <span class="badge">Spring Boot</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">Hibernate</span>
+            <span class="badge">Spring Security</span>
+          </div>
+          <p class="description" data-i18n="wh_desc">
+            Har bir korxona uchun mustaqil ombor infratuzilmasini yaratib beruvchi tizim. Mahsulotlar harakati, talab yuqori bo'lgan tovarlar monitoringi hamda xodimlar amallarini real vaqt rejimida nazorat qilish imkonini beradi.
+          </p>
+        </article>
+
+        <!-- Project 3: Support Bot -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Enterprise Customer Support Bot</h3>
+            <a href="https://github.com/saidovdiyorbek/support_bot_zero-one" target="_blank" class="code-btn">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+          <div class="tags">
+            <span class="badge">Java</span>
+            <span class="badge">Telegram API</span>
+            <span class="badge">Spring Boot</span>
+            <span class="badge">PostgreSQL</span>
+          </div>
+          <p class="description" data-i18n="bot_desc">
+            Tashkilotlar va ularning mijozlari o'rtasida murojaatlarni navbatga olish, qayta ishlash hamda muammolarni tizimli hal qilish uchun ishlab chiqilgan avtomatlashtirilgan yordamchi bot.
+          </p>
+        </article>
+
+        <!-- Project 4: YouTube Clone -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Video Streaming Platform Engine (YouTube Clone)</h3>
+            <a href="https://github.com/dostonsulaymon/youtube-backend" target="_blank" class="code-btn">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+          <div class="tags">
+            <span class="badge">Spring Boot</span>
+            <span class="badge">Spring Security</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">REST API</span>
+          </div>
+          <p class="description" data-i18n="yt_desc">
+            Katta hajmdagi media-ma'lumotlarni oqimli uzatish, foydalanuvchi kanallari, izohlar tizimi hamda video kontentni boshqarish uchun ishlab chiqilgan keng ko'lamli backend arxitekturasi.
+          </p>
+        </article>
+
+        <!-- Project 5: KunUz Clone -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3>News Portal High-Load Engine (Kun.uz Clone)</h3>
+            <a href="https://github.com/saidovdiyorbek/kunUz" target="_blank" class="code-btn">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+          <div class="tags">
+            <span class="badge">Java</span>
+            <span class="badge">Spring Boot</span>
+            <span class="badge">JPA</span>
+            <span class="badge">PostgreSQL</span>
+          </div>
+          <p class="description" data-i18n="kun_desc">
+            Yangiliklar lentasi, maqolalarni toifalash, foydalanuvchilar rollari (RBAC) va xavfsiz boshqaruv panelini ta'minlovchi yangiliklar portali API servisi.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2026 Saidov Diyorbek. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    const translations = {
+      uz: {
+        hero_role: "Backend Software Developer",
+        hero_summary: "Java va Kotlin ekotizimida yuqori yuklamali, xavfsiz hamda masshtablanuvchi backend tizimlarni loyihalashga ixtisoslashgan dasturchi.",
+        skills_title: "Texnologik Stek & Ko'nikmalar",
+        projects_title: "Bajarilgan Loyihalar",
+        hr_desc: "Tashkilotlar uchun xodimlarni boshqarish, vazifalar taqsimlash (task assignment) va avtomatlashtirilgan bildirishnomalar yuborish servisi. Tizim mikroxizmatlar arxitekturasi asosida loyihalashtirilgan.",
+        wh_desc: "Har bir korxona uchun mustaqil ombor infratuzilmasini yaratib beruvchi tizim. Mahsulotlar harakati, talab yuqori bo'lgan tovarlar monitoringi hamda xodimlar amallarini real vaqt rejimida nazorat qilish imkonini beradi.",
+        bot_desc: "Tashkilotlar va ularning mijozlari o'rtasida murojaatlarni navbatga olish, qayta ishlash hamda muammolarni tizimli hal qilish uchun ishlab chiqilgan avtomatlashtirilgan yordamchi bot.",
+        yt_desc: "Katta hajmdagi media-ma'lumotlarni oqimli uzatish, foydalanuvchi kanallari, izohlar tizimi hamda video kontentni boshqarish uchun ishlab chiqilgan keng ko'lamli backend arxitekturasi.",
+        kun_desc: "Yangiliklar lentasi, maqolalarni toifalash, foydalanuvchilar rollari (RBAC) va xavfsiz boshqaruv panelini ta'minlovchi yangiliklar portali API servisi."
+      },
+      en: {
+        hero_role: "Backend Software Developer",
+        hero_summary: "Specialized in designing robust, secure, and scalable backend architectures within the Java and Kotlin ecosystem.",
+        skills_title: "Tech Stack & Skills",
+        projects_title: "Featured Projects",
+        hr_desc: "Enterprise microservice platform designed for staff management, automated task assignment, and real-time notification dispatching.",
+        wh_desc: "Multi-tenant inventory management system delivering end-to-end item tracking, real-time analytics on high-demand stock, and employee operations audit.",
+        bot_desc: "Automated enterprise support bot built to streamline client interactions, queue management, and support ticket processing via Telegram.",
+        yt_desc: "Scalable backend architecture for media streaming, channel administration, comment hierarchies, and secure video content management.",
+        kun_desc: "High-throughput news publishing backend featuring multi-category feeds, RBAC authentication, and content administration APIs."
+      },
+      ru: {
+        hero_role: "Backend-разработчик",
+        hero_summary: "Специализируюсь на проектировании надежных, безопасных и масштабируемых бэкенд-систем в экосистеме Java и Kotlin.",
+        skills_title: "Технологический стек",
+        projects_title: "Реализованные проекты",
+        hr_desc: "Микросервисная платформа для управления персоналом, распределения задач и автоматической отправки уведомлений сотрудникам организаций.",
+        wh_desc: "Мультитенантная система складского учета с онлайн-контролем оборота продукции, мониторингом ликвидных товаров и аудитом действий персонала.",
+        bot_desc: "Корпоративный Telegram-бот для автоматизации поддержки клиентов, маршрутизации запросов и системного решения обращений.",
+        yt_desc: "Масштабируемый бэкенд видеохостинга с поддержкой потоковой передачи данных, системой каналов, иерархических комментариев и модерации.",
+        kun_desc: "API-сервис для новостного портала с поддержкой рубрикатора, ролевой модели доступа (RBAC) и панели администрирования публикаций."
+      }
+    };
+
+    function setLanguage(lang) {
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.textContent.toLowerCase() === lang);
+      });
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+
+      localStorage.setItem('preferred_lang', lang);
+    }
+
+    // Saqlangan tilni tiklash
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('preferred_lang') || 'uz';
+      setLanguage(savedLang);
+    });
+  </script>
+</body>
+</html>
